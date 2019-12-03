@@ -4,8 +4,13 @@
 
 <div class="container">
 
-<h2 class="pt-3 pb-3 text-center text-md-left">Photo's from LSi's 25th Anniversary Dinner</h2>
-<p class="text-center text-md-left">Click photo for larger viewing.</p>
+<div class="text-center">
+    <img src="{{ asset('images/logo.png') }}" alt="LSi 25th Anniversary Logo" class="mt-4 mb-4">
+
+    <h1>25th Anniversary Gala Dinner Photo Gallery</h1>
+    <p>Click photo for larger viewing.</p>
+</div>
+
     <div class="row">
     @foreach($photos as $i=>$photo)
         @if($i % 4 === 0)
