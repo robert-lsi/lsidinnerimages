@@ -21,7 +21,7 @@ Route::post('/accesscode', 'PageController@postAccessCode');
 Route::group(['middleware' => ['accesscode']], function () {
     Route::resource('gallery', 'GalleryController');
 
-    Route::get('/photos', 'GalleryController@photo');
+    Route::get('/photos/{id}', 'GalleryController@photo');
 
     Route::get('/logout', 'PageController@logout');
 });

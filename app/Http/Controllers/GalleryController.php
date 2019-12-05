@@ -17,9 +17,9 @@ class GalleryController extends Controller
         return view('gallery.index');
     }
 
-    public function photo()
+    public function photo($id)
     {
-        $gallery = Gallery::find(1);
+        $gallery = Gallery::find($id);
 
         $photos = $gallery->getMedia()->paginate(40);
 
@@ -44,7 +44,7 @@ class GalleryController extends Controller
      */
     public function store(Request $request)
     {
-        $gallery = Gallery::find(1);
+        $gallery = Gallery::find(2);
 
         $media = $gallery
             ->addMedia($request->file('file'))

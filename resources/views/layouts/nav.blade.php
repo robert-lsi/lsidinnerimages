@@ -11,7 +11,10 @@
                         <a class="nav-link" href="{{ action('GalleryController@index') }}">Add Photos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ action('GalleryController@photo') }}">View Photos</a>
+                        <a class="nav-link" href="{{ action('GalleryController@photo', [1]) }}">LSi Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ action('GalleryController@photo', [2]) }}">Other Photos</a>
                     </li>
                 @endif
             </ul>
