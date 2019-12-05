@@ -21,7 +21,6 @@
     </div>
     @else
     <h3>You are logged in</h3>
-    <p>lol</p>
     @endif
     
     
