@@ -18,7 +18,7 @@ Route::post('/accesscode', 'PageController@postAccessCode');
 
 
 
-Route::group(['middleware' => ['accesscode']], function(){
+Route::group(['middleware' => ['accesscode']], function () {
     Route::resource('gallery', 'GalleryController');
 
     Route::get('/photos', 'GalleryController@photo');
