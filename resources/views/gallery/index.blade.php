@@ -9,7 +9,7 @@
 
         <p>Thank you again for attending our 25th Anniversary Gala Dinner on the 23rd November 2019. It was a fantastic evening and wouldn't have been the same without you all being there.</p>
         <p>In order to remember the night this website allows you to upload your own photos onto our online gallery so they can be shared with all the other attendees. To do this please use this page to upload your photos</p>
-        <p>You can also view and save all the professional photos from the evening and those which others have uploaded by clicking the "View Photos" tab on the navigation bar.</p>
+        <p>You can also view and save all the professional photos from the evening and those which others have uploaded by clicking the "LSi Gallery" or "Other Photos" tab on the navigation bar.</p>
     </div>
 
     {!! Form::open(['action' => 'GalleryController@store', 'files' => true, 'class' => 'dropzone']) !!}
